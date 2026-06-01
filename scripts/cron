@@ -31,3 +31,6 @@
 */15 * * * * sudo -u postgres psql -c "SELECT pg_switch_wal();" >> /var/log/wal_archive.log 2>&1
 
 0 6 * * * /home/ubuntu/verificar_backups.sh >> /var/log/verificar_backups.log 2>&1
+
+0 1 * * * /home/ubuntu/subir_logs_oci.sh >> /var/log/subir_logs_oci.log 2>&1
+ubuntu@vnic-nodo1:~$
